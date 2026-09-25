@@ -1,0 +1,9 @@
+macmini:~/.no-mistakes/worktrees/9dad724c8425/01M3CGGB6SYX6Z0NSY8R3H4J6B{1}$ /var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r00
+00gn/T//fm-lab.EsJW28/probe.sh A-live-foreign /var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T//fm-lab.EsJW28/results.t
+xt; ps -o pid,ppid,comm -p $$ -p $PPID >> /var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T//fm-lab.EsJW28/results.txt
+macmini:~/.no-mistakes/worktrees/9dad724c8425/01M3CGGB6SYX6Z0NSY8R3H4J6B{2}$ /var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r00
+00gn/T//fm-lab.EsJW28/probe.sh B-stale-pane /var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T//fm-lab.EsJW28/results.txt
+macmini:~/.no-mistakes/worktrees/9dad724c8425/01M3CGGB6SYX6Z0NSY8R3H4J6B{3}$ env -u TMUX -u TMUX_PANE TMUX_TMPDIR=/var/
+folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T//fm-lab.EsJW28/tmux tmux -L fm-lab-nested new-session -d -s inner -x 120 -y
+ 30 /var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T//fm-lab.EsJW28/nested.sh
+macmini:~/.no-mistakes/worktrees/9dad724c8425/01M3CGGB6SYX6Z0NSY8R3H4J6B{4}$

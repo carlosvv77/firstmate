@@ -1,0 +1,25 @@
+# Live Herdr lab: herdr server provisioned from inside a private tmux pane (session fm-lab-tmuxrancio-23595-11228)
+# 'new' = target 07039fb, 'base' = b805823 (pre-fix); same process, same env
+
+outer tmux pane still live: pid=23607 pane=%0 pane_pid=23608
+[A-live-foreign] new  pid=31785 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,0 TMUX_PANE=%0 -> spawn_backend=herdr supervisor_backend=herdr supervisor_target=fm-lab-tmuxrancio-23595-11228:w1:p1
+[A-live-foreign] base pid=31785 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,0 TMUX_PANE=%0 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%0
+  PID  PPID COMM
+29367 27636 bash (kiro-cli-term)
+29459 29367 /bin/bash
+--- after kill-pane %0 (server kept alive by session keepalive):
+live pane %1 pid=23607
+display-message -t %0 -> "" rc=0
+herdr lab server still running
+[B-stale-pane] new  pid=36712 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,0 TMUX_PANE=%0 -> spawn_backend=herdr supervisor_backend=herdr supervisor_target=fm-lab-tmuxrancio-23595-11228:w1:p1
+[B-stale-pane] base pid=36712 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,0 TMUX_PANE=%0 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%0
+[C-genuine-nested-tmux-in-herdr] new  pid=38856 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab-nested,38842,0 TMUX_PANE=%0 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%0
+[C-genuine-nested-tmux-in-herdr] base pid=38856 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab-nested,38842,0 TMUX_PANE=%0 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%0
+  ancestry: 38843 38842 bash ; pane_pid per tmux: 38843
+[D-server-pid-mismatch] new  pid=38903 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab-nested,99999,0 TMUX_PANE=%0 -> spawn_backend=herdr supervisor_backend=herdr supervisor_target=fm-lab-tmuxrancio-23595-11228:w1:p1
+[D-server-pid-mismatch] base pid=38903 HERDR_ENV=1 HERDR_PANE_ID=w1:p1 TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab-nested,99999,0 TMUX_PANE=%0 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%0
+  real server pid=38842, forged TMUX pid field=99999
+[E1-plain-tmux-no-herdr] new  pid=41794 HERDR_ENV= HERDR_PANE_ID= TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,1 TMUX_PANE=%2 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%2
+[E1-plain-tmux-no-herdr] base pid=41794 HERDR_ENV= HERDR_PANE_ID= TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,1 TMUX_PANE=%2 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%2
+[E2-plain-tmux-stale-pane-no-herdr] new  pid=41811 HERDR_ENV= HERDR_PANE_ID= TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,1 TMUX_PANE=%77 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%77
+[E2-plain-tmux-stale-pane-no-herdr] base pid=41811 HERDR_ENV= HERDR_PANE_ID= TMUX=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-lab.EsJW28/tmux/tmux-501/fm-lab,23607,1 TMUX_PANE=%77 -> spawn_backend=tmux supervisor_backend=tmux supervisor_target=%77
