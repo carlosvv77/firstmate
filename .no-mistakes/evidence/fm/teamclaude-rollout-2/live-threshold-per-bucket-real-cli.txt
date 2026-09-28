@@ -1,0 +1,36 @@
+### flat 95% (the 5h bucket missing)
+$ teamclaude threshold   (before)
+Switch threshold: 95%
+Set with: teamclaude threshold <1-100>   e.g. teamclaude threshold 90
+Per bucket: teamclaude threshold unified7d=90   (=default drops it again)
+$ bin/fm-teamclaude.sh claude-env
+rc=0
+$ teamclaude threshold   (after)
+Switch threshold: 95%
+  unified5h: 80%
+  unified7d: 95%
+
+### flat 80% (weekly bucket missing)
+$ teamclaude threshold   (before)
+Switch threshold: 80%
+Set with: teamclaude threshold <1-100>   e.g. teamclaude threshold 90
+Per bucket: teamclaude threshold unified7d=90   (=default drops it again)
+$ bin/fm-teamclaude.sh claude-env
+rc=0
+$ teamclaude threshold   (after)
+Switch threshold: 80%
+  unified5h: 80%
+  unified7d: 95%
+
+### 5h 90% / 7d 99%
+$ teamclaude threshold   (before)
+Switch threshold: 95%
+  unified5h: 90%
+  unified7d: 99%
+$ bin/fm-teamclaude.sh claude-env
+rc=0
+$ teamclaude threshold   (after)
+Switch threshold: 95%
+  unified5h: 80%
+  unified7d: 95%
+

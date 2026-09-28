@@ -1,0 +1,15 @@
+ok - claude-env is the MITM proxy environment with no direct fallback
+ok - a missing teamclaude CLI refuses the worker and names the missing tool
+ok - a down TeamClaude proxy refuses with the proxy diagnostic and no direct fallback
+ok - thresholds already at unified5h 80% and unified7d 95% start the worker without reapplying them
+ok - thresholds off the policy are set per bucket to 5h 80% and 7d 95%, never flattened
+ok - a runtime warning on stderr does not hide matching thresholds
+ok - claude-env passes TeamClaude's hold timeout to the Claude worker
+ok - thresholds that cannot be applied or verified refuse the worker
+ok - an opencodex autostart shim is not the Codex binary a worker runs
+ok - codex-config is the TeamClaude HTTP provider and not a second proxy
+ok - a Claude worker launch uses TeamClaude and drops a direct base URL
+ok - a down proxy stops the Claude launch before a worker exists
+ok - a Codex worker reaches TeamClaude on loopback without the shim and keeps the captain's proxy
+ok - a Pi worker, even on openai-codex, does not go through TeamClaude for now
+ok - an OpenCode worker launch is unchanged

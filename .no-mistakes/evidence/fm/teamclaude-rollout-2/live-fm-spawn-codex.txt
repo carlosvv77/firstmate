@@ -1,0 +1,9 @@
+== fm-spawn rc=0
+warning: /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.K4JLEa/codex/home/data/tc-live-codex/launch-brief.md records no ship branch; defaulting to legacy branch fm/tc-live-codex
+warning: /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.K4JLEa/codex/home/data/tc-live-codex/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+spawned tc-live-codex harness=codex kind=ship mode=no-mistakes yolo=off window=firstmate:fm-tc-live-codex worktree=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.K4JLEa/codex/wt
+== launch command sent to the pane:
+export COMPACT_ADVISER_DISABLE=1; export GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=core.hooksPath GIT_CONFIG_VALUE_0='/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.K4JLEa/codex/home/state/tc-live-codex.git-hooks'; env -u CURSOR_AGENT -u CURSOR_INVOKED_AS -u GEMINI_CLI NO_PROXY="${NO_PROXY:+$NO_PROXY,}127.0.0.1,localhost" no_proxy="${no_proxy:+$no_proxy,}127.0.0.1,localhost" codex --dangerously-bypass-approvals-and-sandbox --disable hooks -c "notify=[\"bash\",\"-c\",\"touch '/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.K4JLEa/codex/home/state/tc-live-codex.turn-ended'\"]" -c 'model_provider="teamclaude"' -c 'model_providers.teamclaude.name="teamclaude"' -c 'model_providers.teamclaude.base_url="http://127.0.0.1:3456/backend-api/codex"' -c 'model_providers.teamclaude.wire_api="responses"' "$('/Users/c/.no-mistakes/worktrees/9dad724c8425/01M3JFA6WBXQCD65890JG5GSTK/bin/fm-operational-input.sh' encode launch-brief < '/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.K4JLEa/codex/home/data/tc-live-codex/launch-brief.md')"
+
+== record exists: yes
+LAUNCHFILE=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.K4JLEa/codex/launch.log

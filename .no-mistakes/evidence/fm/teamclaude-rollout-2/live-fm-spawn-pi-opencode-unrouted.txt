@@ -1,0 +1,21 @@
+### fm-spawn pi --model openai-codex/gpt-5.5 (Pi deferred to ag-awb: must NOT carry TeamClaude)
+== fm-spawn rc=0
+warning: /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Octk2i/pi/home/data/tc-pi/launch-brief.md records no ship branch; defaulting to legacy branch fm/tc-pi
+warning: /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Octk2i/pi/home/data/tc-pi/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+spawned tc-pi harness=pi kind=ship mode=no-mistakes yolo=off window=firstmate:fm-tc-pi worktree=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Octk2i/pi/wt
+== launch command sent to the pane:
+export COMPACT_ADVISER_DISABLE=1; export GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=core.hooksPath GIT_CONFIG_VALUE_0='/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Octk2i/pi/home/state/tc-pi.git-hooks'; env -u CURSOR_AGENT -u CURSOR_INVOKED_AS -u GEMINI_CLI FM_PI_HARNESS=pi '/Users/c/.local/bin/pi' --tui-mode regular --model 'openai-codex/gpt-5.5' -e '/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Octk2i/pi/home/state/tc-pi.pi-ext.ts' "$('/Users/c/.no-mistakes/worktrees/9dad724c8425/01M3JFA6WBXQCD65890JG5GSTK/bin/fm-operational-input.sh' encode launch-brief < '/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Octk2i/pi/home/data/tc-pi/launch-brief.md')"
+
+== record exists: yes
+LAUNCHFILE=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Octk2i/pi/launch.log
+
+### fm-spawn opencode (must be unchanged)
+== fm-spawn rc=0
+warning: /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.wjfAFc/opencode/home/data/tc-oc/launch-brief.md records no ship branch; defaulting to legacy branch fm/tc-oc
+warning: /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.wjfAFc/opencode/home/data/tc-oc/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+spawned tc-oc harness=opencode kind=ship mode=no-mistakes yolo=off window=firstmate:fm-tc-oc worktree=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.wjfAFc/opencode/wt
+== launch command sent to the pane:
+export COMPACT_ADVISER_DISABLE=1; export GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=core.hooksPath GIT_CONFIG_VALUE_0='/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.wjfAFc/opencode/home/state/tc-oc.git-hooks'; env -u CURSOR_AGENT -u CURSOR_INVOKED_AS -u GEMINI_CLI OPENCODE_CONFIG_CONTENT='{"permission":{"*":"allow"}}' opencode --prompt "$('/Users/c/.no-mistakes/worktrees/9dad724c8425/01M3JFA6WBXQCD65890JG5GSTK/bin/fm-operational-input.sh' encode launch-brief < '/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.wjfAFc/opencode/home/data/tc-oc/launch-brief.md')"
+
+== record exists: yes
+LAUNCHFILE=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.wjfAFc/opencode/launch.log

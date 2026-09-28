@@ -1,0 +1,7 @@
+== fm-spawn rc=1
+error: teamclaude env --mitm failed. Refusing to start this worker. There is no direct fallback.
+error: No config found at /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.kye4dX/claude/home/user-home/.config/teamclaude.json. Add an account first: teamclaude login
+== launch command sent to the pane:
+
+== record exists: no
+LAUNCHFILE=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.kye4dX/claude/launch.log

@@ -1,0 +1,23 @@
+### TeamClaude config read-only, thresholds flat 95% -> `teamclaude threshold unified5h=80 unified7d=95` must fail
+$ bin/fm-teamclaude.sh claude-env
+error: TeamClaude's rotation thresholds are unified5h=95% unified7d=95%, not unified5h=80% unified7d=95%, and `teamclaude threshold unified5h=80 unified7d=95` failed. Refusing to start this worker. There is no direct fallback.
+error: [TeamClaude] Cannot create /var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/tmp.d6EXaWNm1a/tc.json.lock (EACCES); writing the config without it
+error: node:internal/fs/promises:1360
+error:   return new FileHandle(await PromisePrototypeThen(
+error:                         ^
+error: 
+error: Error: EACCES: permission denied, open '/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/tmp.d6EXaWNm1a/tc.json.tmp-89336-cd821739'
+error:     at async open (node:internal/fs/promises:1360:25)
+error:     at async writeJsonAtomic (file:///Users/c/apps/teamclaude/src/config.js:74:16)
+error:     at async run (file:///Users/c/apps/teamclaude/src/config.js:254:14) {
+error:   errno: -13,
+error:   code: 'EACCES',
+error:   syscall: 'open',
+error:   path: '/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/tmp.d6EXaWNm1a/tc.json.tmp-89336-cd821739'
+error: }
+error: 
+error: Node.js v26.7.0
+rc=1
+$ teamclaude threshold (after)
+Switch threshold: 95%
+Set with: teamclaude threshold <1-100>   e.g. teamclaude threshold 90

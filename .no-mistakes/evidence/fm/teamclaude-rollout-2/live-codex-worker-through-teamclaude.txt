@@ -1,0 +1,35 @@
+## run: env <fm-spawn codex NO_PROXY prefix> codex exec -c 'model_provider="teamclaude"' -c 'model_providers.teamclaude.name="teamclaude"' -c 'model_providers.teamclaude.base_url="http://127.0.0.1:3456/backend-api/codex"' -c 'model_providers.teamclaude.wire_api="responses"'  'Reply with exactly: CODEX-VIA-TEAMCLAUDE'
+Reading additional input from stdin...
+OpenAI Codex v0.155.0-alpha.16.4
+--------
+workdir: /private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/tmp.Rmqw5oQYe4
+model: gpt-6-luna
+provider: teamclaude
+approval: never
+sandbox: danger-full-access
+reasoning effort: high
+reasoning summaries: none
+session id: 01a0e6ad-1837-70e1-b924-af3c1783f9c2
+--------
+user
+Reply with exactly: CODEX-VIA-TEAMCLAUDE
+2026-09-28T06:21:38.916086Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp)")))
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart
+2026-09-28T06:21:39.170642Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp)")))
+2026-09-28T06:21:40.185031Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp)")))
+2026-09-28T06:21:40.190380Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp)")))
+2026-09-28T06:21:40.449210Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp)")))
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: SessionStart Completed
+2026-09-28T06:21:41.455101Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp)")))
+codex
+CODEX-VIA-TEAMCLAUDE
+tokens used
+16.047
+CODEX-VIA-TEAMCLAUDE
+codex rc=0

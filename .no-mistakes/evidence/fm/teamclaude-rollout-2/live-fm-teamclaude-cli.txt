@@ -1,0 +1,20 @@
+$ teamclaude threshold   # real proxy, before
+Switch threshold: 95%
+  unified5h: 80%
+  unified7d: 95%
+
+$ bin/fm-teamclaude.sh claude-env
+-u ANTHROPIC_BASE_URL HTTPS_PROXY='http://127.0.0.1:3456' HTTP_PROXY='http://127.0.0.1:3456' https_proxy='http://127.0.0.1:3456' http_proxy='http://127.0.0.1:3456' NO_PROXY='localhost,127.0.0.1,::1' no_proxy='localhost,127.0.0.1,::1' NODE_EXTRA_CA_CERTS='/Users/c/.config/teamclaude-ca.pem' 
+rc=0
+
+$ bin/fm-teamclaude.sh codex-exec
+codex
+rc=0
+
+$ bin/fm-teamclaude.sh codex-config
+-c 'model_provider="teamclaude"' -c 'model_providers.teamclaude.name="teamclaude"' -c 'model_providers.teamclaude.base_url="http://127.0.0.1:3456/backend-api/codex"' -c 'model_providers.teamclaude.wire_api="responses"' 
+rc=0
+
+$ PATH=/usr/bin:/bin bin/fm-teamclaude.sh claude-env   # teamclaude absent
+error: teamclaude is not on PATH. Refusing to start this worker because a direct login would be spent. Install TeamClaude and start its proxy. There is no direct fallback.
+rc=1

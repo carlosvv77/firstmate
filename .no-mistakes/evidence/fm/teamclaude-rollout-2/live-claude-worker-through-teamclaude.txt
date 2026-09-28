@@ -1,0 +1,9 @@
+## proxy before
+{"clients":[],"knownSessions":[{"name":"jvmo.adm@gmail.com","knownSessions":13,"sessions":1},{"name":"mammakali38@gmail.com","knownSessions":24,"sessions":0},{"name":"jvmo.adm@gmail.com","knownSessions":0,"sessions":0},{"name":"mammakali38@gmail.com","knownSessions":4,"sessions":2}]}
+## run: <fm-spawn claude env prefix> ANTHROPIC_BASE_URL=https://example.invalid (must be cleared) claude -p ...
+worker sees HTTPS_PROXY=http://127.0.0.1:3456 ANTHROPIC_BASE_URL=unset NODE_EXTRA_CA_CERTS=/Users/c/.config/teamclaude-ca.pem
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+TEAMCLAUDE-ROUTED
+claude rc=0
+## proxy after
+{"clients":[],"knownSessions":[{"name":"jvmo.adm@gmail.com","knownSessions":14,"sessions":2},{"name":"mammakali38@gmail.com","knownSessions":24,"sessions":0},{"name":"jvmo.adm@gmail.com","knownSessions":0,"sessions":0},{"name":"mammakali38@gmail.com","knownSessions":5,"sessions":3}]}

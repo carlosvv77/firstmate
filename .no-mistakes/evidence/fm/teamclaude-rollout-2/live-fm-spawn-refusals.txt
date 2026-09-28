@@ -1,0 +1,18 @@
+### fm-spawn claude, teamclaude NOT on PATH
+== fm-spawn rc=1
+error: teamclaude is not on PATH. Refusing to start this worker because a direct login would be spent. Install TeamClaude and start its proxy. There is no direct fallback.
+== launch command sent to the pane:
+
+== record exists: no
+LAUNCHFILE=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.8quYhS/claude/launch.log
+
+### fm-spawn codex, TeamClaude proxy port 3999 not listening (real CLI)
+== fm-spawn rc=1
+error: TeamClaude proxy is not available. Refusing to start this worker. There is no direct fallback.
+error: Cannot connect to proxy at localhost:3999
+error: Is the server running? Start with: teamclaude server
+error: Details: fetch failed
+== launch command sent to the pane:
+
+== record exists: no
+LAUNCHFILE=/private/var/folders/xl/7kgqxnx970ncfhrbw3d_wg4r0000gn/T/fm-tc-live.Fdol6G/codex/launch.log
